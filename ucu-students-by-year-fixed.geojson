@@ -5612,7 +5612,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 38.290943,54.011013 ]
+       "coordinates":  [ 35.2596,48.6359 ]
     },
     "properties": {
     "IdStudenta":4900,
@@ -5843,7 +5843,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.24632,48.150318 ]
+       "coordinates":  [ 30.2129,50.2313 ]
     },
     "properties": {
     "IdStudenta":4196,
@@ -6032,7 +6032,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 33.184085,49.598666 ]
+       "coordinates":  [ 23.5417,49.4007 ]
     },
     "properties": {
     "IdStudenta":3176,
@@ -7670,7 +7670,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.652892,47.462556 ]
+       "coordinates":  [ 24.2609,50.2138 ]
     },
     "properties": {
     "IdStudenta":3483,
@@ -7880,7 +7880,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 32.05878,49.444789 ]
+       "coordinates":  [ 48.6359,35.2596 ]
     },
     "properties": {
     "IdStudenta":3492,
@@ -11828,7 +11828,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.868102,48.7811 ]
+       "coordinates":  [ 23.5832,49.3513 ]
     },
     "properties": {
     "IdStudenta":3517,
@@ -11870,7 +11870,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 38.49197,48.739518 ]
+       "coordinates":  [ 23.4800,49.2818 ]
     },
     "properties": {
     "IdStudenta":3519,
@@ -20417,7 +20417,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 36.531766,49.574525 ]
+       "coordinates":  [ 36.3717,49.3205 ]
     },
     "properties": {
     "IdStudenta":4518,
@@ -32009,7 +32009,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 38.49197,48.739518 ]
+       "coordinates":  [ 23.4800,49.2818 ]
     },
     "properties": {
     "IdStudenta":5761,
