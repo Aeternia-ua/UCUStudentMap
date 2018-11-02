@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google Maps from External GeoJson with Clustered Marker Filters</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!doctype html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+<meta charset="utf-8">
+  <title>Географія студентів українського католицького університету</title>
+      <!--link to bootstrap to reset the css. you could remove this or use your own resets.*/ --> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">   
+  </head>
+<body>
+<div class="header"><img id="logo" src="https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/img/ucu-logo.png" alt="Italian Trulli"><h1>Географія студентів Українського католицького університету</h1>
+</div>
+<div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTVJc7OONXECbuv_ycAf7zt9JHUQBWZ5Q&callback=initMap">
+</script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="https://raw.githubusercontent.com/jquery/codeorigin.jquery.com/master/cdn/ui/1.9.2/jquery-ui.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+<div class="mapWrap">
+  <div id="map-canvas"></div>
+<div id="studnumber"></div>
+ <div class="investCast">
+
+    <select id="year" onchange="filterMarkers(this.value);">  
+        <option value="">Оберіть рік вступу</option>
+                    <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014 (заоч)</option>
+        </select>
+  </div>  
+</div>
+</body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
