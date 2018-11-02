@@ -3659,7 +3659,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 24.1143,50.574871 ]
+       "coordinates":  [ 24.3957,48.5808 ]
     },
     "properties": {
     "IdStudenta":3577,
@@ -7880,7 +7880,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 48.6359,35.2596 ]
+       "coordinates":  [ 23.5412,49.3456 ]
     },
     "properties": {
     "IdStudenta":3492,
@@ -10820,7 +10820,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 29.294766,50.761291 ]
+       "coordinates":  [ 24.1654,49.2619 ]
     },
     "properties": {
     "IdStudenta":5643,
@@ -13193,7 +13193,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 38.189235,47.858462 ]
+       "coordinates":  [ 28.2216,49.1131 ]
     },
     "properties": {
     "IdStudenta":5507,
@@ -13529,7 +13529,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.75481,47.206503 ]
+       "coordinates":  [ 37.4510,47.1218 ]
     },
     "properties": {
     "IdStudenta":5522,
@@ -14306,7 +14306,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 29.223979,50.873997 ]
+       "coordinates":  [ 27.4001,50.1737 ]
     },
     "properties": {
     "IdStudenta":4567,
@@ -19115,7 +19115,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 28.641701,50.756149 ]
+       "coordinates":  [ 27.1816,49.4606 ]
     },
     "properties": {
     "IdStudenta":3912,
@@ -20984,7 +20984,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.540762,48.319226 ]
+       "coordinates":  [ 27.4001,50.1737 ]
     },
     "properties": {
     "IdStudenta":3630,
