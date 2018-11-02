@@ -1748,7 +1748,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -2.1326,53.547897 ]
+       "coordinates":  [ 24.609,49.9654 ]
     },
     "properties": {
     "IdStudenta":3615,
@@ -5822,7 +5822,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -2.1326,53.547897 ]
+       "coordinates":  [ 24.609,49.9654 ]
     },
     "properties": {
     "IdStudenta":3182,
@@ -12122,7 +12122,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -2.1326,53.547897 ]
+       "coordinates":  [ 24.609,49.9654 ]
     },
     "properties": {
     "IdStudenta":5869,
@@ -12374,7 +12374,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -2.1326,53.547897 ]
+       "coordinates":  [ 24.609,49.9654 ]
     },
     "properties": {
     "IdStudenta":5859,
