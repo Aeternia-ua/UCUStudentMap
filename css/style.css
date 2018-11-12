@@ -3,6 +3,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.footer1 a {
+  color: white !important;
+}
 .header {
     position: fixed;
     top: 0;
@@ -10,7 +13,7 @@ html, body {
     width: 100%;
     background: #7f1716;
     color:#ECECEC;
-    z-index: 1000;
+    z-index: 10;
     height: 150px;
     overflow: hidden;
     -webkit-transition: height 0.3s;
@@ -20,17 +23,55 @@ html, body {
     line-height:160px;
 
 }
-.header h1
-{
-    font-size: 3vh;
+.header h1 {
+    font-size: 18px;
     font-weight:normal;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+@media (min-width: 600px) {
+  h1 {
+    font-size: 28px !important;
+    text-align: center;
+  }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  h1 {
+    font-size: 24px !important;
+    text-align: center;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
 #logo{
   height:70%;
   float:left;
+  margin-left:22px;
+  padding-left: 5%;
+}
+.footer1{
+ height: 15px;
+ width: 100%; 
+  position: fixed;
+  z-index: 9999999 !important;
+    text-align: center;
+      background: #7f1716;
+  opacity: 0.5;
+    color:#ECECEC;
+/*  padding-left: 5%; */
+  bottom: 0px;
+    overflow: hidden;
+      line-height:16px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.form-inline{
+  z-index: 999999 !important; 
 }
 #map {
                 width: 100%;
@@ -39,58 +80,67 @@ html, body {
 
 #map-canvas {
     height: 50%;
-}
-select {
-		border: 2px solid #2D3181;
-		padding: 6px 4px;
-		outline: none;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		border-radius: 0;
-		color: #888;
-		margin: 0;
-		width: 100%;
-		max-width: 100%;
-		min-height: 21px;
-		display: block;
-		margin-bottom: 0;
-		background: #fdfdfd;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-    }
-    
+}  
     .investCast{
+      padding-left: 5%;
+            padding-right: 5%;
+      padding-top: 15px;
         -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-           -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-                box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+          background: #7f1716;
         position: fixed;
         top: 105px;
-        left: 10px;
-        z-index: 99999;
-        display: block;
-        width: 95%;
+        left: 0px;
+        z-index: 1999;
+   display: inline-block;
+        width: 100%;
+      height: auto;
     }
+select.bs-select-hidden, select.selectpicker {
+    display: none!important;
+  z-index: 0 !important;
+}
+.btn-danger{
+  background-color: #b4483d !important;
+  border-color: #4e0000 !important;
+  margin: 5px !important;
+}
+.btn-danger:active{
+  background-color: #b71c1c !important;
+    border-color: #4e0000 !important;
+}
+.btn-danger:hover{
+background-color: #b71c1c !important;  
+      border-color: #b4483d !important;
+}
+
 #studnumber{
-z-index: 99999;
+z-index: 999;
+  padding-top: 5px;
+padding-left: 5px;
+  padding-bottom: auto;
 		width: auto;
 		min-width: 7%;
 		height: 30px;
-		display: block;
-  position: fixed;
-bottom: 0px;
-  		border: 2px solid #2D3181;
-		padding: 6px 4px;
-  		background: #ECECEC;
+		display: inline-block;
+  text-align: center;
+      color:#ECECEC;
   		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+      font-size: 24px;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  
 }
 /* css for styling the infowindow */
 #iw_container .iw_title {
     font-size: 16px;
     font-weight: bold;
-
+}
 .custom-iw .gm-style-iw {
   text-align: center;
   top: 14px !important;
@@ -144,3 +194,65 @@ bottom: 0px;
   background-color: black !important;
 }
 
+.boxes {
+  margin: auto;
+  z-index: 99999;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.form-group{
+  color: #ddd;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  z-index: 9999999 !important;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+      z-index: 9 !important;  
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  margin-left: 15px; 
+  margin-right: 5px;
+   margin-top: 5px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0;
+}
+
+input[type="checkbox"] + label:before {
+    z-index: 9999999 !important;  
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

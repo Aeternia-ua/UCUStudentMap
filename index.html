@@ -14,41 +14,96 @@
 
 <body>
 
-  <!doctype html><html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-<meta charset="utf-8">
-  <title>Географія студентів українського католицького університету</title>
-      <!--link to bootstrap to reset the css. you could remove this or use your own resets.*/ --> 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">   
-  </head>
+  <head>
+    <meta charset="utf-8">
+    <title>Географія студентів українського католицького університету</title>
+    <!--link to bootstrap to reset the css. you could remove this or use your own resets.*/ -->
+    <!--Required for checkmark on custom checkbox.*/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery.min.js' type='text/javascript'></script>
+    <script src='https://code.jquery.com/jquery.min.js' type='text/javascript'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+</head>
+
 <body>
-<div class="header"><img id="logo" src="https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/img/ucu-logo.png" alt="Italian Trulli"><h1>Географія студентів Українського католицького університету</h1>
-</div>
-<div id="map"></div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTVJc7OONXECbuv_ycAf7zt9JHUQBWZ5Q&callback=initMap">
-</script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="https://raw.githubusercontent.com/jquery/codeorigin.jquery.com/master/cdn/ui/1.9.2/jquery-ui.js"></script>
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-
-<div class="mapWrap">
-  <div id="map-canvas"></div>
-<div id="studnumber"></div>
- <div class="investCast">
-
-    <select id="year" onchange="filterMarkers(this.value);">  
-        <option value="">Оберіть рік вступу</option>
-                    <option value="2018">2018</option>
-              <option value="2017">2017</option>
-              <option value="2016">2016</option>
-              <option value="2015">2015</option>
-              <option value="2014">2014 (заоч)</option>
-        </select>
-  </div>  
-</div>
+    <div class="header"><a href="https://ucu.edu.ua"><img id="logo" src="https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/img/ucu-logo.png" alt="Ukrainian catholic university logo"></a>
+        <h1>Географія студентів Українського католицького університету</h1>
+    </div>
+    <div class="investCast">
+        <div class="form-group row flex-v-center">
+            <div class="col-md-5">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="control-label">Оберіть рік: </label>
+                        <input type="checkbox" class="year" value="2018" checked="checked" id="box-1" onclick="clickBox();">
+                        <label for="box-1">2018</label>
+                        <input type="checkbox" class="year" value="2017" checked="checked" id="box-2" onclick="clickBox();">
+                        <label for="box-2">2017</label>
+                        <input type="checkbox" class="year" value="2016" checked="checked" id="box-3" onclick="clickBox();">
+                        <label for="box-3">2016</label>
+                        <input type="checkbox" class="year" value="2015" checked="checked" id="box-4" onclick="clickBox();">
+                        <label for="box-4">2015</label>
+                        <input type="checkbox" class="year" value="2014(заоч)" checked="checked" id="box-5" onclick="clickBox();">
+                        <label for="box-5">2014(заоч)</label>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div><select class="selectpicker" multiple data-actions-box="true" id="specGroup" data-style="btn-danger" data-width="100%" multiple data-max-options="25" multiple title="Оберіть спеціальність..." onchange="clickBox()">
+                        <optgroup label="Гуманітарний факультет">
+                            <option class="spec" id="spec" value="Історія" onchange="clickBox()">Історія</option>
+                            <option class="spec" id="spec" value="Філологія" onchange="clickBox()">Філологія</option>
+                            <option class="spec" value="Культурологія" onchange="clickBox()">Культурологія</option>
+                            <option class="spec" value="Історія та археологія" onchange="clickBox()">Історія та археологія</option>
+                        </optgroup>
+                        <optgroup label="Факультет наук про здоров’я">
+                            <option class="spec" value="Соціальна педагогіка" onchange="clickBox()">Соціальна педагогіка</option>
+                            <option class="spec" value="Психологія" onchange="clickBox()">Психологія</option>
+                            <option class="spec" value="Соціальна робота" onchange="clickBox()">Соціальна робота</option>
+                            <option class="spec" value="Фізична терапія, ерготерапія" onchange="clickBox()">Фізична терапія, ерготерапія</option>
+                        </optgroup>
+                        <optgroup label="Факультет прикладних наук">
+                            <option class="spec" value="Комп’ютерні науки та інформаційні технології" onchange="clickBox()">Комп’ютерні науки та інформаційні технології</option>
+                            <option class="spec" value="Системний аналіз" onchange="clickBox()">Системний аналіз</option>
+                        </optgroup>
+                        <optgroup label="Факультет суспільних наук">
+                            <option class="spec" value="Журналістика" onchange="clickBox()">Журналістика</option>
+                            <option class="spec" value="Соціологія" onchange="clickBox()">Соціологія</option>
+                            <option class="spec" value="Політологія" onchange="clickBox()">Політологія</option>
+                            <option class="spec" value="Менеджмент" onchange="clickBox()">Менеджмент</option>
+                            <option class="spec" value="Публічне управління та адміністрування" onchange="clickBox()">Публічне управління та адміністрування</option>
+                            <option class="spec" value="Право" onchange="clickBox()">Право</option>
+                        </optgroup>
+                        <optgroup label="Факультет суспільних наук (ЛБШ)">
+                            <option class="spec" value="Менеджмент (ЛБШ)" onchange="clickBox()">Менеджмент</option>
+                        </optgroup>
+                        <optgroup label="Філософсько-богословський (ЛДС)">
+                            <option class="spec" value="Богослов'я" onchange="clickBox()">Богослов'я</option>
+                        </optgroup>
+                    </select></div>
+            </div>
+            <div class="col-md-3">
+                <span id="studnumber"></span>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <!-- Replace the value of the key parameter with your own API key. -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTVJc7OONXECbuv_ycAf7zt9JHUQBWZ5Q&callback=initMap">
+        </script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/js/oms.min.js"></script>
+        <div class="mapWrap">
+            <div id="map-canvas"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer1">Ірина Герасимук || <a href="http://ceit.ucu.edu.ua">ЦеНІТ</a> 2018 ©</div>
 </body>
-</html>
   
   
 
