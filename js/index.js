@@ -11,6 +11,7 @@ function initMap() {
     var mapOptions = {
         zoom: 6,
         maxZoom: 15,
+        minZoom: 3,
         center: new google.maps.LatLng(49.3994, 31.1656), // Ukraine
         streetViewControl: false,
         mapTypeControl: false,
