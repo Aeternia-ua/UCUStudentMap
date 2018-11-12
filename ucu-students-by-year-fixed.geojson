@@ -1244,7 +1244,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 34.216919,51.314388 ]
+       "coordinates":  [ 26.1505,50.3711 ]
     },
     "properties": {
     "IdStudenta":6073,
@@ -4814,7 +4814,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 34.216919,51.314388 ]
+       "coordinates":  [ 26.1505,50.3711 ]
     },
     "properties": {
     "IdStudenta":4296,
@@ -12689,7 +12689,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 23.902648,49.582292 ]
+       "coordinates":  [ 32.0335,49.2640 ]
     },
     "properties": {
     "IdStudenta":5535,
@@ -20690,7 +20690,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 23.902648,49.582292 ]
+       "coordinates":  [ 32.0335,49.2640 ]
     },
     "properties": {
     "IdStudenta":3647,
@@ -22685,7 +22685,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 29.395981,49.156261 ]
+       "coordinates":  [ 30.5002,50.3447 ]
     },
     "properties": {
     "IdStudenta":4681,
@@ -24113,7 +24113,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 23.902648,49.582292 ]
+       "coordinates":  [ 32.0335,49.2640 ]
     },
     "properties": {
     "IdStudenta":5960,
@@ -26906,7 +26906,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 34.216919,51.314388 ]
+       "coordinates":  [ 26.1505,50.3711 ]
     },
     "properties": {
     "IdStudenta":6005,
@@ -28502,7 +28502,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 23.902648,49.582292 ]
+       "coordinates":  [ 32.0335,49.2640 ]
     },
     "properties": {
     "IdStudenta":5929,
@@ -30056,7 +30056,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 34.216919,51.314388 ]
+       "coordinates":  [ 26.1505,50.3711 ]
     },
     "properties": {
     "IdStudenta":4773,
