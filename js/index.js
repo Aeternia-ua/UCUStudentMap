@@ -246,12 +246,12 @@ function initMap() {
     map = new google.maps.Map(mapCanvas, mapOptions, SetBounds);
     ///Single marker custom icon
     var customIcon = {
-        url: 'https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/img/icon-red.png',
+        url: 'https://raw.githubusercontent.com/Aeternia-ua/UCUStudentMap/master/img/icon-red.png',
         scaledSize: new google.maps.Size(30, 30), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
-    map.data.loadGeoJson('https://raw.githubusercontent.com/Aeternia-ua/UCU-students-map/master/ucu-students-by-year-fixed.geojson', null, function(features) {
+    map.data.loadGeoJson('https://raw.githubusercontent.com/Aeternia-ua/UCUStudentMap/master/ucu-students-by-year-fixed.geojson', null, function(features) {
         var markers = features.map(function(feature, i) {
             var marker = new google.maps.Marker({
                 position: feature.getGeometry().get(0),
