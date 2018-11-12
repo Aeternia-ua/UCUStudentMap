@@ -8447,7 +8447,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 38.1974,48.06081 ]
+       "coordinates":  [ 23.4403,49.1050 ]
     },
     "properties": {
     "IdStudenta":3225,
@@ -35432,7 +35432,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 37.372806,48.051951 ]
+       "coordinates":  [ 24.1224,50.2033 ] 
     },
     "properties": {
     "IdStudenta":5755,
