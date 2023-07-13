@@ -1,0 +1,47 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.467975,49.232016 ]
+    },
+    "properties": {
+    "IdStudenta":3206,
+    "Facultet":"Гуманітарний",
+    "Specialnist":"Історія",
+    "Osvitnia Programa":"Історія",
+    "Kurs":4,
+    "Grupa":"2015",
+    "Programa":"1. Програма підготовки бакалавра",
+    "Gromadianstvo":"Україна",
+    "Oblast":"ВІННИЦЬКА",
+    "MistoSelo":"м.Вінниця",
+    "Rayon":"",
+    "Stat":"жін"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.7682230638849, -80.19673502466802 ]
+    },
+    "properties": {
+    "IdStudenta":2562,
+    "Facultet":"175 SW 7TH ST STE 1712, Miami, FL 33130",
+    "Specialnist":"",
+    "Osvitnia Programa":"",
+    "Kurs":4,
+    "Grupa":"2015",
+    "Programa":"1. Програма підготовки бакалавра",
+    "Gromadianstvo":"Україна",
+    "Oblast":"ЛЬВІВСЬКА",
+    "MistoSelo":"с.Коросне",
+    "Rayon":"Перемишлянський",
+    "Stat":"чол"
+    }
+  }
+]
+}
